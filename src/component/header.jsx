@@ -17,10 +17,10 @@ const Header = () => {
     <>
     <h1>Header Test</h1>
     {socials.map((link)=>{
-        return <>
+        return <div key={link["Social"]}>
         <div>{link["Social"]}</div>
         <div>{link["Link"]}</div>
-        </>
+        </div>
     })}
     </>
   )

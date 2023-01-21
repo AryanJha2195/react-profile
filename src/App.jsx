@@ -1,7 +1,7 @@
 import './App.css';
 import Nav from './component/nav';
 import About from './component/about';
-import Header from './component/header';
+import Header from './component/header/header';
 import Experience from './component/experience';
 import Services from './component/services';
 import Portfoilo from './component/portfoilo';

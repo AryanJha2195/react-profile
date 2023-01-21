@@ -15,7 +15,7 @@ const Header = () => {
     const [phone, setPhone] = useState(data["Phone"]);
     return (
         <>
-            <h1>Header Test</h1>
+            <h1>This change was done to see the CI\CD Pipeline</h1>
             {socials.map((link) => {
                 return <div key={link["Social"]}>
                     <div>{link["Social"]}</div>

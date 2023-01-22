@@ -14,7 +14,7 @@ export const getFromLS = key => {
 
 export const getSocialIcon = (icon) => {
     switch(icon.toLowerCase()){
-        case 'linkedin': return <FaFacebook></FaFacebook>;
+        case 'facebook': return <FaFacebook></FaFacebook>;
         case 'twitter': return <FaTwitter></FaTwitter>;
         case 'github': return <FaGithub></FaGithub>;
         case 'youtube': return <FaYoutube></FaYoutube>;

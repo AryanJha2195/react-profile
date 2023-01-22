@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* CSS defaults for all */
 * {
@@ -30,6 +32,7 @@
 }
 
 html {
+    font-size: 14px;
     scroll-behavior: smooth;
 }
 
@@ -46,3 +49,23 @@ body {
 }
 
 /* General Styling for entire application. */
+
+.btn {
+  border: 1px solid var(--color-light);
+  background-color: var(--color-primary);
+  padding: 1em 1.5em;
+  color: var(--color-light);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: var(--transition);
+}
+
+.btn-transparent{
+  background-color: transparent;
+}
+
+.btn:hover{
+  background-color: var(--color-primary-variant);
+  color: black;
+}

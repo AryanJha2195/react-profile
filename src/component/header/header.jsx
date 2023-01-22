@@ -32,7 +32,7 @@ const Header = () => {
                 <div className='social-row'>
                     <div className='socials'>
                         {socials.map((social) => {
-                            return <a key={social["Link"]} href={social["Link"]}>{getSocialIcon(social["Social"])}</a>
+                            return <a className='social' key={social["Link"]} href={social["Link"]}>{getSocialIcon(social["Social"])}</a>
                         })}
                     </div>
                     <div className="profileimage">

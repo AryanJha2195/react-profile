@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import './nav.css'
 
 import { FaHome, FaAddressBook } from 'react-icons/fa';
@@ -9,14 +10,15 @@ import { RiPagesLine } from 'react-icons/ri';
 import { AiOutlineContacts } from 'react-icons/ai'
 
 const Nav = () => {
+    const [Selection, setSelection] = useState("#")
     return (
         <nav>
             <div className='nav'>
-                <a className='nav-link' href="#" al><IoHomeOutline /></a>
-                <a className='nav-link' href="#About"><SiAboutdotme /></a>
-                <a className='nav-link' href="#Experience"><BsGear /></a>
-                <a className='nav-link' href="#Portfolio"><RiPagesLine></RiPagesLine></a>
-                <a className='nav-link' href="#Contact"><AiOutlineContacts /></a>
+                <a className={Selection=="#"?"active":""} href="#" onClick={()=>setSelection("#")}><IoHomeOutline /></a>
+                <a className={Selection=="#About"?"active":""} href="#About" onClick={()=>setSelection("#About")}><SiAboutdotme /></a>
+                <a className={Selection=="#Experience"?"active":""} href="#Experience" onClick={()=>setSelection("#Experience")}><BsGear /></a>
+                <a className={Selection=="#Portfolio"?"active":""} href="#Portfolio" onClick={()=>setSelection("#Portfolio")}><RiPagesLine></RiPagesLine></a>
+                <a className={Selection=="#Contact"?"active":""} href="#Contact" onClick={()=>setSelection("#Contact")}><AiOutlineContacts /></a>
             </div>
         </nav>
     )

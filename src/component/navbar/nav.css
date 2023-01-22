@@ -12,13 +12,17 @@ nav{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.nav-link{
+.nav a{
     margin: 1rem 1.5rem;
     padding: 0.5rem;
     border-radius: 50%;
     transition: var(--transition);
 }
 
-.nav-link:hover{
+.nav a:hover{
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+.active{
+    background-color: rgba(2, 255, 255, 0.5);
 }

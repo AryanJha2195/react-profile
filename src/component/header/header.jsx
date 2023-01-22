@@ -12,7 +12,7 @@ const data = {
 }
 const Header = () => {
     const [name, SetName] = useState(data["Name"]);
-    const [job, SetJob] = useState(data["Job Title"]);
+    const [job, SetJob] = useState(data["Job_Title"]);
     const [cv_link, setCV_Link] = useState(data["CV_Link"]);
     const [socials, setSocials] = useState(data["Socials"]);
     const [email, setEmail] = useState(data["Email"]);
@@ -20,20 +20,23 @@ const Header = () => {
     return (
         <>
             <section id="header" className='header'>
-                <div className="heading">
+                <div className="heading center">
                     <p>Hi I'm</p>
                     <h1>{name}</h1>
-                    <h4>{job}</h4>
+                    <p>{job}</p>
                 </div>
-                <div className='header-links'>
-                    <a href={cv_link}><button>Download CV</button></a>
-                    <a href='#contact'><button>Contact Me</button></a>
+                <div className='header-links center'>
+                    <a href={cv_link} className="hl"><button className='btn btn-transparent'>Download CV</button></a>
+                    <a href='#contact' className="hl"><button className='btn'>Contact Me</button></a>
                 </div>
                 <div className='social-row'>
                     <div className='socials'>
                         {socials.map((social) => {
                             return <a key={social["Link"]} href={social["Link"]}>{getSocialIcon(social["Social"])}</a>
                         })}
+                    </div>
+                    <div className="profileimage">
+                        <img src="https://images.unsplash.com/photo-1602233158242-3ba0ac4d2167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80" alt="" className="image" />
                     </div>
                     <div className='Next-Section'>
                         <h5>Scroll Down</h5>

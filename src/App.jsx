@@ -1,5 +1,5 @@
 import './App.css';
-import Nav from './component/nav';
+import Nav from './component/navbar/nav';
 import About from './component/about';
 import Header from './component/header/header';
 import Experience from './component/experience';
@@ -10,16 +10,16 @@ import Footer from './component/footer';
 
 function App() {
   return (
-    <>
-    <Nav/>
-    <Header/>
-    <About/>
-    <Experience/>
-    <Services/>
-    <Portfoilo/>
-    <Contact/>
-    <Footer/>
-    </>
+    <div>
+      <Nav />
+      <Header />
+      <About />
+      <Experience />
+      <Services />
+      <Portfoilo />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 

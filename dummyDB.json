@@ -1,0 +1,6 @@
+{
+    "users":[
+        {"userid":1, "name":"Rosh Jackson", "imageUrl":"https://www.shutterstock.com/image-photo/head-shot-portrait-smart-confident-600w-1721092123.jpg", "job":"FullStack Developer", "currentEmployer":"Microsoft Corp", "contact":"+1-428-858-457", "emailid":"roshj@pwc.com"},
+        {"userid":2, "name":"Emersion Rhodes", "imageUrl":"https://www.shutterstock.com/image-photo/smiling-bearded-young-male-model-600w-788313199.jpg", "job":"Marketing Strategist", "currentEmployer":"Riyat Furnitures", "contact":"+58-658-257-486", "emailid":"erhodesj@pwc.com"}
+    ]
+}

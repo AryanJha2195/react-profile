@@ -40,7 +40,14 @@
 }
 
 .social-icon{
+    display: none;
     margin: 3rem 0;
+    color: var(--color-primary-variant);
+    transition: var(--transition);
+}
+
+.social-icon:hover{
+    color: var(--color-light);
 }
 
 .Next-Section{
@@ -49,10 +56,21 @@
 
 .profileimage{
     background: linear-gradient(var(--color-primary),transparent);
+    width: 25em;
     border-radius: 12rem 12rem 0 0;
 }
 
 .image{
      padding: 2rem;
-     max-width: 25em;
+     max-width: 25rem;
+}
+
+@media screen and (min-width: 680px) {
+    .social-icon{
+        display: block;
+    }
+
+    html{
+        font-size: 16px;
+    }
 }

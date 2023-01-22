@@ -6,7 +6,7 @@ const data = {
     "Name": "Aryan Jha",
     "Job_Title": "Front End Developer",
     "CV_Link": "https://www.google.com",
-    "Socials": [{ "Social": "Linkedin", "Link": "www.google.com" }, { "Social": "GitHub", "Link": "www.google.com" }],
+    "Socials": [{ "Social": "Linkedin", "Link": "www.google.com" }, { "Social": "GitHub", "Link": "www.google.com" }, {"Social":"Instagram", "Link":"www.instagram.com"}, {"Social":"youtube", "Link":"www.instagram.com"}, {"Social":"twitter", "Link":"www.instagram.com"}],
     "Email": "xyz@abc.com",
     "Phone": "+919988776655"
 }
@@ -39,7 +39,7 @@ const Header = () => {
                         <img src={process.env.PUBLIC_URL + '/images/person.png'} alt="" className="image" />
                     </div>
                     <div className='socials'>
-                        <h5 className='Next-Section'>Scroll Down</h5>
+                        <h5 className='Next-Section social-icon'>Scroll Down →</h5>
                     </div>
                 </div>
             </section>

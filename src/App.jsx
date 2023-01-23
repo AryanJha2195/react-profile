@@ -1,6 +1,6 @@
 import './App.css';
 import Nav from './component/navbar/nav';
-import About from './component/about';
+import About from './component/about/about';
 import Header from './component/header/header';
 import Experience from './component/experience';
 import Services from './component/services';

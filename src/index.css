@@ -73,3 +73,18 @@ body {
 section{
   margin: 4rem 0rem;
 }
+
+.title{
+  text-align: center;
+}
+
+.title h1{
+  font-size: 29px;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.title span{
+  font-size: 13.28px;
+  color: var(--color-light);
+}

@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* CSS defaults for all */
 * {
     margin: 0;

@@ -3,10 +3,14 @@ import "./footer.css";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-gray-900 text-white">
+      <footer>
         <div className="copyright">
-          <h1>footer section</h1>
-          
+          <p className="paragraph">The copyright of this website belongs to Aryan Jha </p>
+          <p>© Aryan Jha 2023</p>
+        </div>
+        <div className="emailbox">
+          <h2>Share your email with us for regular updates</h2>
+          <input type="email" name="" id="" /><input className="submitbtn" type="submit" value="Submit" />
         </div>
       </footer>
     </>

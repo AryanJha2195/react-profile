@@ -3,6 +3,52 @@ footer{
     position: relative;
     bottom: 0;
     width: 100%;
-    border: 2px solid white;
-    height: 300px;
+    border-radius: 60px;
+    
+    /* border: 2px solid white; */
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.copyright{
+    /* background-color: black; */
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.copyright p{
+    /* margin-left: 100px; */
+    /* background-color: red; */
+    display: block;
+    width: 65%;
+    text-align: center;
+}
+.emailbox{
+    /* background-color: green; */
+    align-items: center;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px ;
+}
+
+.emailbox input{
+
+    /* border: 2px solid rgba(63, 63, 233, 0.603); */
+    border-radius: 4px;
+    align-items: center;
+    text-align: center;
+    
+}
+.emailbox h4{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+.submitbtn{
+    background-color: rgba(0, 0, 255, 0.363);
+    margin-left: 2px;
 }

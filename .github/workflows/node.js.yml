@@ -5,12 +5,13 @@ name: Node.js CI
 
 on:
   push:
-    branches: ["master"]
+    branches: [ "master" ]
   pull_request:
-    branches: ["master"]
+    branches: [ "master" ]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     strategy:
@@ -19,17 +20,26 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+      
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm install
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: "npm"
+    - name: Run the tests and generate the coverage report
+      run: npm test -- --coverage
+      
+    - name: Upload coverage to codecov
+      uses: codecov/codecov-action@v3
 
-      - name: Install dependencies
-        run: npm install
+    - name: Build
+      run: npm run build
 
     - name: Deploy
       run: |
